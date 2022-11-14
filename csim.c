@@ -170,7 +170,7 @@ void accessData(mem_addr_t addr)
 	/* write new line   */
 	curr_set[victim_line].valid = '\1';
 	curr_set[victim_line].tag = tag_;
-	curr_set[victim_line].lru = lru_counter;
+	curr_set[victim_line].lru = lru_counter++;
 
 	return;
 }
